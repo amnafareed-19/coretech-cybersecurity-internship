@@ -1,20 +1,11 @@
 # CoreTech Cybersecurity Internship 
 
 ## Introduction 
-Name: AMNA FAREED
-Education: BS Cybersecurity (2nd Semester)
-City: Karachi, Pakistan
-Skills:
-- Java
-- C++
-- HTML
-- CSS
-- Linux
-- Ethical hacking tools like nmap, burpsuite, wireshark etc
-- GitHub
-
-Learning Goal:
-My goal is to learn practical cybersecurity concepts, ethical hacking fundamentals, security tools and industry best practices through this internship. I look forward to acheiving this goal in a month after completing this internship.
+- Name: AMNA FAREED
+- Education: BS Cybersecurity (2nd Semester)
+- City: Karachi, Pakistan
+- Skills: Java, C++, HTML, CSS, Linux, GitHub amd Ethical hacking tools like nmap, burpsuite, wireshark etc
+- Learning Goal: My goal is to learn practical cybersecurity concepts, ethical hacking fundamentals, security tools and industry best practices through this internship. I look forward to acheiving this goal in a month after completing this internship.
 
 ## Questions & Answers
 
