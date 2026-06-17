@@ -8,47 +8,44 @@ A comprehensive guide to essential Linux commands utilized in security operation
 ### 1. pwd (Print Working Directory)
 * **Description:** Displays the absolute path of the current working directory.
 * **Example Usage:**
-```bash
-    pwd
-    ```
+    bash: pwd
+
 * **Output:** 
-![pwd Output](images/pwd.png)
+![pwd Output](./images/pwd.png)
 
 ### 2. ls (List Directory Contents)
 * **Description:** Lists files and directories. In security, `ls -la` is used to view hidden files (like `.bash_history`) and detailed permissions.
 * **Example Usage:**
-```bash
-    ls
-    ```
+    bash: ls
+
 * **Output:** 
-![ls Output](images/ls.png)
+![ls Output](./images/ls.png)
 
 ### 3. cd (Change Directory)
 * **Description:** Navigates between directories.
 * **Example Usage:**
-```bash
+    bash:
     cd Documents
-    ```
+
 * **Output:** 
-![cd Output](images/cd.png)
+![cd Output](./images/cd.png)
 
 ### 4. mkdir (Make Directory)
 * **Description:** Creates a new directory. 
 * **Example Usage:**
-```bash
-    mkdir samplefile
-    ```
+bash: mkdir samplefile
+ 
 * **Output:** 
-![mkdir Output](images/mkdir.png)
+![mkdir Output](./images/mkdir.png)
 
 ### 5. rm (Remove Files/Directories)
 * **Description:** Deletes files or directories. Use `rm -rf` with extreme caution to recursively force-delete.
 * **Example Usage:**
-```bash
+bash:
     rm -rf samplefile
-    ```
+   
 * **Output:** 
-![rm Output](images/rm.png)
+![rm Output](./images/rm.png)
 
 ---
 
@@ -57,20 +54,20 @@ A comprehensive guide to essential Linux commands utilized in security operation
 ### 6. chmod (Change Mode / Permissions)
 * **Description:** Modifies file or directory read, write, and execute permissions. Vital for securing sensitive scripts or configuration files.
 * **Example Usage (Giving executable rights to a script):**
-```bash
+bash:
     chmod 755 logs
-    ```
+   
 * **Output:** 
-![chmod Output](images/chmod_chown.png)
+![chmod Output](./images/chmod_chown.png)
 
 ### 7. chown (Change Owner)
 * **Description:** Changes the user and/or group ownership of a file.
 * **Example Usage (Restricting a file to root):**
-```bash
+bash:
     sudo chown root:root backups/
-    ```
+    
 * **Output:** 
-![chown Output](images/chmod_chown.png)
+![chown Output](./images/chmod_chown.png)
 
 ---
 
@@ -79,20 +76,20 @@ A comprehensive guide to essential Linux commands utilized in security operation
 ### 8. useradd (Add a New User)
 * **Description:** Creates a new local user account with a home directory and password setup configuration.
 * **Example Usage:**
-```bash
+bash:
     sudo useradd -m ahmed
-    ```
+    
 * **Output:** 
-![useradd Output](images/useradd.png)
+![useradd Output](./images/useradd.png)
 
 ### 9. passwd (Change Password)
 * **Description:** Changes a user's password. Used by administrators to enforce credential rotation.
 * **Example Usage:**
-```bash
+  bash:
     sudo passwd ahmed
-    ```
+    
 * **Output:** 
-![passwd Output](images/passwd.png)
+![passwd Output](./images/passwd.png)
 
 ---
 
@@ -101,38 +98,38 @@ A comprehensive guide to essential Linux commands utilized in security operation
 ### 10. ifconfig (Interface Configuration)
 * **Description:** Displays active network interfaces, IP addresses, MAC addresses, and subnet masks.
 * **Example Usage:**
-```bash
+  bash:
     ifconfig
-    ```
+    
 * **Output:** 
-![ifconfig Output](images/ifconfig.png)
+![ifconfig Output](./images/ifconfig.png)
 
 ### 11. ping (Packet Internet Groper)
 * **Description:** Sends ICMP Echo requests to verify network connectivity and host availability.
 * **Example Usage:**
-```bash
+  bash:
     ping google.com
-    ```
+    
 * **Output:** 
-![ping Output](images/ping.png)
+![ping Output](./images/ping.png)
 
 ### 12. netstat (Network Statistics)
 * **Description:** Displays network connections, routing tables, and interface statistics. Crucial for identifying unauthorized open listening ports (`-tuln`).
 * **Example Usage:**
-```bash
+bash:
     netstat -tuln
-    ```
+    
 * **Output:** 
-![netstat Output](images/netstat.png)
+![netstat Output](./images/netstat.png)
 
 ### 13. nmap (Network Mapper)
 * **Description:** A premier open-source tool for network discovery and vulnerability scanning.
 * **Example Usage (Basic SYN Scan):**
-```bash
+  bash:
     nmap -sS 192.168.1.1
-    ```
+    
 * **Output:** 
-![nmap Output](images/nmap.png)
+![nmap Output](./images/nmap.png)
 
 ---
 
@@ -141,29 +138,29 @@ A comprehensive guide to essential Linux commands utilized in security operation
 ### 14. ps (Process Status)
 * **Description:** Provides a snapshot of currently running processes. `ps aux` shows all processes running under all users.
 * **Example Usage:**
-```bash
+  bash:
     ps aux
-    ```
+    
 * **Output:** 
-![ps Output](images/ps.png)
+![ps Output](./images/ps.png)
 
 ### 15. top (Table of Processes)
 * **Description:** Displays a dynamic, real-time view of system processes, CPU, and memory utilization.
 * **Example Usage:**
-```bash
+bash:
     top
-    ```
+
 * **Output:** 
-![top Output](images/top.png)
+![top Output](./images/top.png)
 
 ### 16. kill (Terminate Process)
 * **Description:** Lists down all the signals or sends a signal (usually `SIGKILL` or `SIGTERM`) to terminate a process via its Process ID (PID).
 * **Example Usage:**
-```bash
+bash:
     kill -l
-    ```
+    
 * **Output:** 
-![kill Output](images/kill.png)
+![kill Output](./images/kill.png)
 
 ---
 
@@ -172,20 +169,20 @@ A comprehensive guide to essential Linux commands utilized in security operation
 ### 17. sudo (Superuser Do)
 * **Description:** Executes a command with elevated root administrative privileges.
 * **Example Usage:**
-```bash
+bash:
     sudo cat /etc/shadow
-    ```
+    
 * **Output:** 
-![sudo Output](images/sudo.png)
+![sudo Output](./images/sudo.png)
 
 ### 18. apt-get update (Update Package Lists)
 * **Description:** Resynchronizes package index files from their sources over the internet to ensure tool repositories are current.
 * **Example Usage:**
-```bash
+bash:
     sudo apt-get update
-    ```
+    
 * **Output:** 
-![apt-get update Output](images/aptupdate.png)
+![apt-get update Output](./images/aptupdate.png)
 
 ---
 
@@ -194,17 +191,17 @@ A comprehensive guide to essential Linux commands utilized in security operation
 ### 19. cat (Concatenate / View Files)
 * **Description:** Used to read file contents instantly. Often used to inspect logs or configuration files.
 * **Example Usage:**
-```bash
+bash:
     cat /etc/passwd
-    ```
+    
 * **Output:** 
-![cat Output](images/cat.png)
+![cat Output](./images/cat.png)
 
 ### 20. grep (Global Regular Expression Print)
 * **Description:** Filters text or output logs using specific string patterns. Invaluable for parsing massive log files for Indicators of Compromise (IoCs).
 * **Example Usage (Searching for failed login attempts):**
-```bash
+bash:
     grep "private" .profile
-    ```
+
 * **Output:** 
-![grep Output](images/grep.png)
+![grep Output](./images/grep.png)
